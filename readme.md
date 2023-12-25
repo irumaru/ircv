@@ -17,7 +17,7 @@
 
 ## 成果物
 動作試験  
-[鹿島川](video/動作試験.mp4)
+https://github.com/irumaru/ircv/assets/46730701/d44fdc7c-f225-49f3-a3c7-f39d8ced475d
 
 本体
 ![本体](image/3-3.jpg)
