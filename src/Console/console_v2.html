@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="console_v2.js"></script>
+    <title>IRCV-47 Main console</title>
+</head>
+<body>
+    <h1>IRCV Console</h1>
+    <table border="1">
+        <tr>
+            <th>センサー項目</th><th>センサーデータ</th>
+        </tr>
+        <tr>
+            <td>バッテリー残量</td><td id="sensorPowerCapacity">NotFound</td>
+        </tr>
+        <tr>
+            <td>電源電圧</td><td id="statusPowerV">NotFound</td>
+        </tr>
+        <tr>
+            <td>消費電流</td><td id="statusPowerI">NotFound</td>
+        </tr>
+        <tr>
+            <td>水温</td><td id="statusSensorWoterRem">NotFound</td>
+        </tr>
+    </table><br>
+    <table border="1">
+        <tr>
+            <th>推進機</th><th>左舷</th><th>右舷</th>
+        </tr>
+        <tr>
+            <td>PWM目標出力</td><td id="statusThrusterLPWMGoal" width="40">0%</td><td id="statusThrusterRPWMGoal" width="40">0%</td>
+        </tr>
+        <tr>
+            <td>PWM現在出力</td><td id="statusThrusterLPWMNow">NotFound</td><td id="statusThrusterRPWMNow">NotFound</td>
+        </tr>
+    </table><br>
+    <table border="1">
+        <tr>
+            <th>舵</th><th>角度</th>
+        </tr>
+        <tr>
+            <td>目標角度</td><td id="statusRudderAngleGoal" width="100">0°</td>
+        </tr>
+        <tr>
+            <td>現在角度</td><td id="statusRudderAngleNow">NotFound</td>
+        </tr>
+    </table><br>
+    <table border="1">
+        <tr>
+            <th>操作設定</th><th>設定値</th><th>変更</th>
+        </tr>
+        <tr>
+            <td>操作モード</td><td id="thrusterMode" width="100">Static</td><td><input type="button" onclick="thruster_modechange()" value="モード変更"></td>
+        </tr>
+        <tr>
+            <td>進行方向</td><td id="direction">前進</td><td><input type="button" onclick="direction()" value="出力反転"></td>
+        </tr>
+        <tr>
+            <td>速力</td><td id="statusThrusterGoal">停止</td><td>Wキー,Sキー</td>
+        </tr>
+        <tr>
+            <td>入力モード</td><td id="inputMode">WASDモード</td><td><input type="button" onclick="inputChange()" value="モード変更"></td>
+        </tr>
+    </table>
+    <p>操作・コマンド</p>
+    <input type="text" id="inputCmd">
+    <input type="button" onclick="inputCmd()" value="実行(Enter)">
+</body>
+</html>

@@ -1,0 +1,13 @@
+[Unit]
+Description=ircvc
+After=syslog.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/smb
+ExecStart=sh /home/pi/smb/start.sh
+TimeoutStopSec=5
+StandardOutput=null
+
+[Install]
+WantedBy = multi-user.target
