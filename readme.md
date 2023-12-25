@@ -17,7 +17,7 @@
 
 ## 成果物
 動作試験
-video/動作試験.mp4
+<video src="video/%E5%8B%95%E4%BD%9C%E8%A9%A6%E9%A8%93.mp4" controls title="Title"></video>
 
 本体
 ![本体](image/3-3.jpg)
