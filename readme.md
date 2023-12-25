@@ -17,7 +17,7 @@
 
 ## 成果物
 動作試験
-<div><video controls src="video/動作試験.mp4" muted="false"></video></div>
+video/動作試験.mp4
 
 本体
 ![本体](image/3-3.jpg)
